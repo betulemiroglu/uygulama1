@@ -38,7 +38,9 @@
 		}
 		else
 		{
-			
+		$dosya=fopen("bilgi.txt","a");
+			$yazilacak = $_POST["adi"]"-" $_POST["SOYADİ"] " "\n";
+			fputs($dosya,$yazilacak);
 			
 			
 			
