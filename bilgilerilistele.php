@@ -15,7 +15,11 @@
 	while (!feof($dosya1) && !feof($dosya2))
 	{
 		
-		
+	$kaynak=fgets($dosya,256);
+		$kaynak=trim($kaynak);
+		$dizi=exolode("-",$kaynak);
+		echo "<option>" .$dizi[0];
+
 		
 		
 		
